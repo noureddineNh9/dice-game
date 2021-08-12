@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --black: rgb(44, 44, 44);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e66465, #9198e5);
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: #e66465;
+  font-size: 70px;
+  margin-top: -10px;
+  font-weight: 500;
+}
+h2 {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  min-width: 60rem;
+  min-height: 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.player1-box,
+.player2-box {
+  display: grid;
+  padding: 60px;
+  justify-content: center;
+  border-radius: inherit;
+  opacity: 0.8;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.score-box {
+  background-color: #e66465;
+  padding: 0px 60px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.btn-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  height: 80%;
+  align-content: space-between;
+  z-index: 10;
+}
+.btn-container-2 {
+  display: grid;
+}
+
+._btn {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+._btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+._btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.rice-container {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.rice-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.win {
+  background-color: rgba(0, 255, 64, 0.4);
+}
+
+.win .score-box {
+  background-color: #ffffff5b;
+  padding: 0px 60px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.win h1 {
+  color: white;
+}
